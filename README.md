@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <img alt="Inbathamizhan S. Defensive security, post-quantum cryptography, forensics." src="./assets/banner-light.svg" width="100%">
+  <img alt="Inbathamizhan S." src="./assets/banner-light.svg" width="100%">
 </picture>
 
 A 3rd-year CSE student venturing into Cybersecurity with a growing technisoul.
