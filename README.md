@@ -34,8 +34,8 @@ Also: [IterEV](https://github.com/itzz-inbathamizhanS/IterEV), EV routing that w
 ### Toolbox
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,java,ts,cpp,spring,react,nextjs,threejs,mongodb,postgres,supabase,docker,vercel&theme=dark">
-  <img alt="Python, Java, TypeScript, C++, Spring Boot, React, Next.js, Three.js, MongoDB, PostgreSQL, Supabase, Docker, Vercel" src="https://skillicons.dev/icons?i=py,java,ts,cpp,spring,react,nextjs,threejs,mongodb,postgres,supabase,docker,vercel&theme=light" height="32">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox/toolbox-dark.png">
+  <img alt="Python, Java, TypeScript, C++, Spring Boot, React, Next.js, Three.js, MongoDB, PostgreSQL, Supabase, Docker, Vercel" src="./assets/toolbox/toolbox-light.png" width="488">
 </picture>
 
 <sub>Also Render and NS-3.</sub>
