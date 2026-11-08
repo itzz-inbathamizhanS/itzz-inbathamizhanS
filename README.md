@@ -3,7 +3,7 @@
   <img alt="Inbathamizhan S. Defensive security, post-quantum cryptography, forensics." src="./assets/banner-light.svg" width="100%">
 </picture>
 
-Third-year B.Tech CSE student.
+A 3rd-year CSE student venturing into Cybersecurity with a growing technisoul.
 
 ### Now
 
