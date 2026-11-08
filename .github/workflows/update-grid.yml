@@ -1,0 +1,32 @@
+name: Refresh activity grid
+
+on:
+  schedule:
+    - cron: "17 19 * * *"   # every day at 00:47 IST
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  grid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild grid from contributions
+        run: python scripts/update_grid.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet; then echo "No change today"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Refresh activity grid"
+          git push
