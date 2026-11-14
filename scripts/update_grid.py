@@ -3,7 +3,7 @@
 
 Columns are weeks (oldest on the left), rows are weekdays (Sunday on top),
 the same layout as GitHub's own contribution graph. The busiest days get the
-amber accent and pulse; everything else uses quiet greys.
+amber accent; quieter days step up in opacity of the text colour.
 """
 import json
 import os
@@ -12,11 +12,14 @@ import sys
 import urllib.request
 
 USER = os.environ.get("GH_USER", "itzz-inbathamizhanS")
-WEEKS, GX, GY, PITCH = 18, 968, 56, 14
+WEEKS, GX, GY, PITCH = 18, 1034, 40, 14   # grid ends at the banner's right edge (1280)
 
 PALETTES = {
-    "assets/banner-dark.svg":  {"none": "#161B22", "q1": "#2A313C", "q2": "#57606A", "q3": "#8B949E", "q4": "#E3B341"},
-    "assets/banner-light.svg": {"none": "#EFF2F5", "q1": "#D1D9E0", "q2": "#8C959F", "q3": "#59636E", "q4": "#9A6700"},
+    # (colour, opacity): drawn in the theme's own text colour so the grid reads on every GitHub ground
+    "assets/banner-dark.svg":  {"none": ("#E6EDF3", ".06"), "q1": ("#E6EDF3", ".14"), "q2": ("#E6EDF3", ".26"),
+                                "q3": ("#E6EDF3", ".42"), "q4": ("#E3B341", "1")},
+    "assets/banner-light.svg": {"none": ("#1F2328", ".06"), "q1": ("#1F2328", ".14"), "q2": ("#1F2328", ".26"),
+                                "q3": ("#1F2328", ".42"), "q4": ("#9A6700", "1")},
 }
 LEVEL = {"NONE": "none", "FIRST_QUARTILE": "q1", "SECOND_QUARTILE": "q2", "THIRD_QUARTILE": "q3", "FOURTH_QUARTILE": "q4"}
 QUERY = """query($login: String!) {
@@ -62,13 +65,10 @@ def cells(grid, pal):
     out = []
     for r in range(7):
         for c in range(WEEKS):
-            lvl = LEVEL.get(grid[c][r], "none")
-            hot = lvl == "q4"
-            d = 0.3 + (c + r) * 0.03
-            delay = f"{d:.2f}s, {d + 0.8:.2f}s" if hot else f"{d:.2f}s"
+            colour, opacity = pal[LEVEL.get(grid[c][r], "none")]
             out.append(
-                f'<rect class="{"hot" if hot else "cell"}" style="animation-delay:{delay}" '
-                f'x="{GX + c * PITCH}" y="{GY + r * PITCH}" width="10" height="10" rx="2" fill="{pal[lvl]}"/>'
+                f'<rect x="{GX + c * PITCH}" y="{GY + r * PITCH}" width="10" height="10" rx="2" '
+                f'fill="{colour}" fill-opacity="{opacity}"/>'
             )
     return "".join(out)
 
