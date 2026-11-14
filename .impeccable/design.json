@@ -4,528 +4,316 @@
   "title": "Design System: Inbathamizhan S",
   "extensions": {
     "colorMeta": {
+      "fg-dark": {
+        "role": "neutral",
+        "displayName": "GitHub Ink (dark theme)",
+        "canonical": "oklch(94.3% 0.011 243.7)",
+        "tonalRamp": [
+          "#0A0B0C",
+          "#232527",
+          "#3F4246",
+          "#5D6267",
+          "#7D8388",
+          "#A1A6A9",
+          "#C6C9CC",
+          "#EDEFF0"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "GitHub Slate (dark theme)",
+        "canonical": "oklch(66.2% 0.018 250.9)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#222529",
+          "#3D4349",
+          "#5B626A",
+          "#7B838C",
+          "#9FA6AD",
+          "#C5CACF",
+          "#ECEFF2"
+        ]
+      },
       "amber-dark": {
         "role": "primary",
-        "displayName": "Hub Amber (dark)",
-        "canonical": "#E3B341",
+        "displayName": "Live Amber (dark theme)",
+        "canonical": "oklch(79.0% 0.139 85.2)",
         "tonalRamp": [
-          "#0F0B04",
-          "#322200",
-          "#5A3C00",
-          "#845800",
-          "#A87A00",
-          "#C2A054",
-          "#DBC79C",
-          "#F4EEE1"
+          "#120900",
+          "#342100",
+          "#593C00",
+          "#815900",
+          "#A47B01",
+          "#C0A15C",
+          "#DDC798",
+          "#FAEDD2"
+        ]
+      },
+      "fg-light": {
+        "role": "neutral",
+        "displayName": "GitHub Ink (light theme)",
+        "canonical": "oklch(25.4% 0.011 254.0)",
+        "tonalRamp": [
+          "#0A0B0C",
+          "#232528",
+          "#3F4246",
+          "#5D6267",
+          "#7E8388",
+          "#A2A5AA",
+          "#C7C9CD",
+          "#EDEEF0"
+        ]
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "GitHub Slate (light theme)",
+        "canonical": "oklch(49.5% 0.022 250.8)",
+        "tonalRamp": [
+          "#090B0E",
+          "#21252A",
+          "#3C434A",
+          "#59626C",
+          "#7A838E",
+          "#9EA6AE",
+          "#C4CAD0",
+          "#ECEFF2"
         ]
       },
       "amber-light": {
         "role": "primary",
-        "displayName": "Hub Amber (light)",
-        "canonical": "#9A6700",
+        "displayName": "Live Amber (light theme)",
+        "canonical": "oklch(55.4% 0.117 75.0)",
         "tonalRamp": [
-          "#0F0A05",
-          "#332104",
-          "#5C3A00",
-          "#875500",
-          "#AB7720",
-          "#C59D66",
-          "#DDC5A5",
-          "#F5EDE3"
-        ]
-      },
-      "ink-dark": {
-        "role": "neutral",
-        "displayName": "Ink (dark)",
-        "canonical": "#E6EDF3",
-        "tonalRamp": [
-          "#0B0B0C",
-          "#232527",
-          "#3E4346",
-          "#5C6267",
-          "#7D8389",
-          "#A1A6AA",
-          "#C6C9CC",
-          "#EEEEEF"
-        ]
-      },
-      "ink-light": {
-        "role": "neutral",
-        "displayName": "Ink (light)",
-        "canonical": "#1F2328",
-        "tonalRamp": [
-          "#0B0B0C",
-          "#232527",
-          "#3F4246",
-          "#5D6268",
-          "#7E8389",
-          "#A2A5AA",
-          "#C7C9CC",
-          "#EEEEEF"
-        ]
-      },
-      "tag-dark": {
-        "role": "neutral",
-        "displayName": "Tag Grey (dark)",
-        "canonical": "#8B949E",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4349",
-          "#5A626B",
-          "#7B838D",
-          "#9FA6AD",
-          "#C5CACE",
-          "#EDEEF0"
-        ]
-      },
-      "tag-light": {
-        "role": "neutral",
-        "displayName": "Tag Grey (light)",
-        "canonical": "#59636E",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#22252A",
-          "#3C434A",
-          "#58626D",
-          "#79848F",
-          "#9EA6AF",
-          "#C5CACF",
-          "#EDEFF0"
-        ]
-      },
-      "silk-dark": {
-        "role": "neutral",
-        "displayName": "Silk (dark, drawn at .30 / .19 opacity)",
-        "canonical": "#8B949E",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4349",
-          "#5A626B",
-          "#7B838D",
-          "#9FA6AD",
-          "#C5CACE",
-          "#EDEEF0"
-        ]
-      },
-      "silk-light": {
-        "role": "neutral",
-        "displayName": "Silk (light, drawn at .48 / .32 opacity)",
-        "canonical": "#8C959F",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4349",
-          "#5A626B",
-          "#7B838D",
-          "#9FA6AD",
-          "#C5CACE",
-          "#EDEEF0"
-        ]
-      },
-      "seed-silk-dark": {
-        "role": "neutral",
-        "displayName": "Seed Silk (dark)",
-        "canonical": "#3D444D",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4249",
-          "#5A626C",
-          "#7B838D",
-          "#A0A6AD",
-          "#C6C9CE",
-          "#EDEEF0"
-        ]
-      },
-      "seed-silk-light": {
-        "role": "neutral",
-        "displayName": "Seed Silk (light)",
-        "canonical": "#C8D1DA",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222528",
-          "#3D4348",
-          "#5A626A",
-          "#7B838C",
-          "#9FA6AC",
-          "#C6CACD",
-          "#EDEEF0"
-        ]
-      },
-      "ground-dark": {
-        "role": "neutral",
-        "displayName": "GitHub Ground (dark, not painted)",
-        "canonical": "#0D1117",
-        "tonalRamp": [
-          "#0B0B0C",
-          "#232528",
-          "#3F4248",
-          "#5C6269",
-          "#7D838B",
-          "#A1A5AC",
-          "#C7C9CD",
-          "#EEEEF0"
-        ]
-      },
-      "ground-light": {
-        "role": "neutral",
-        "displayName": "GitHub Ground (light, not painted)",
-        "canonical": "#FFFFFF",
-        "tonalRamp": [
-          "#0B0B0B",
-          "#252525",
-          "#424242",
-          "#616161",
-          "#828282",
-          "#A5A5A5",
-          "#C9C9C9",
-          "#EEEEEE"
-        ]
-      },
-      "grid-none-dark": {
-        "role": "neutral",
-        "displayName": "Grid none (dark, owned by update_grid.py)",
-        "canonical": "#161B22",
-        "tonalRamp": [
-          "#0B0B0C",
-          "#232528",
-          "#3E4248",
-          "#5C626A",
-          "#7C838C",
-          "#A0A5AC",
-          "#C6C9CE",
-          "#EDEEF0"
-        ]
-      },
-      "grid-q1-dark": {
-        "role": "neutral",
-        "displayName": "Grid q1 (dark, owned by update_grid.py)",
-        "canonical": "#2A313C",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#22252A",
-          "#3D424B",
-          "#5A626E",
-          "#7B8390",
-          "#9FA5B0",
-          "#C5C9D0",
-          "#EDEEF0"
-        ]
-      },
-      "grid-q2-dark": {
-        "role": "neutral",
-        "displayName": "Grid q2 (dark, owned by update_grid.py)",
-        "canonical": "#57606A",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3C434A",
-          "#59626C",
-          "#7A838E",
-          "#9FA6AE",
-          "#C5CACF",
-          "#EDEFF0"
-        ]
-      },
-      "grid-q3-dark": {
-        "role": "neutral",
-        "displayName": "Grid q3 (dark, owned by update_grid.py)",
-        "canonical": "#8B949E",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4349",
-          "#5A626B",
-          "#7B838D",
-          "#9FA6AD",
-          "#C5CACE",
-          "#EDEEF0"
-        ]
-      },
-      "grid-none-light": {
-        "role": "neutral",
-        "displayName": "Grid none (light, owned by update_grid.py)",
-        "canonical": "#EFF2F5",
-        "tonalRamp": [
-          "#0B0B0B",
-          "#242526",
-          "#404244",
-          "#5F6164",
-          "#808385",
-          "#A3A5A7",
-          "#C8C9CA",
-          "#EEEEEF"
-        ]
-      },
-      "grid-q1-light": {
-        "role": "neutral",
-        "displayName": "Grid q1 (light, owned by update_grid.py)",
-        "canonical": "#D1D9E0",
-        "tonalRamp": [
-          "#0B0B0C",
-          "#232528",
-          "#3E4347",
-          "#5B6268",
-          "#7C838A",
-          "#A0A6AB",
-          "#C6CACD",
-          "#EDEEEF"
-        ]
-      },
-      "grid-q2-light": {
-        "role": "neutral",
-        "displayName": "Grid q2 (light, owned by update_grid.py)",
-        "canonical": "#8C959F",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#222529",
-          "#3D4349",
-          "#5A626B",
-          "#7B838D",
-          "#9FA6AD",
-          "#C5CACE",
-          "#EDEEF0"
-        ]
-      },
-      "grid-q3-light": {
-        "role": "neutral",
-        "displayName": "Grid q3 (light, owned by update_grid.py)",
-        "canonical": "#59636E",
-        "tonalRamp": [
-          "#0A0B0C",
-          "#22252A",
-          "#3C434A",
-          "#58626D",
-          "#79848F",
-          "#9EA6AF",
-          "#C5CACF",
-          "#EDEFF0"
+          "#130900",
+          "#352000",
+          "#5A3B00",
+          "#835700",
+          "#A77831",
+          "#C39E6B",
+          "#DFC5A1",
+          "#FBECD8"
         ]
       }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Banner Name",
-        "purpose": "Inbathamizhan S in the banner, once."
+      "ghost": {
+        "displayName": "Tamil Ghost",
+        "purpose": "இன்பத்தமிழன் edge to edge behind the Latin name, ink at .07 dark / .06 light, aria-hidden."
       },
-      "headline": {
-        "displayName": "Hub Name",
-        "purpose": "Aran at the centre of the web; outranks every satellite."
+      "display": {
+        "displayName": "Display",
+        "purpose": "The Latin name in the banner, 5 units left of the column edge."
       },
       "title": {
-        "displayName": "Project Name",
-        "purpose": "Each project caught on the web."
+        "displayName": "Card Title",
+        "purpose": "Project card titles; shrink to fit. Phone layer 80."
+      },
+      "body": {
+        "displayName": "Card Description",
+        "purpose": "One muted sentence per card, at most two lines. Phone layer 46, line advance 54.3."
       },
       "label": {
-        "displayName": "Area Tag",
-        "purpose": "Tracked uppercase tag under each project name, and NOW under the hub."
+        "displayName": "Identity",
+        "purpose": "Banner identity line; Tamil run in Hind Madurai Tamil 500. Phone layer 52."
+      },
+      "status": {
+        "displayName": "Status",
+        "purpose": "Aran's lowercase amber 'now', half the title size, on the title baseline."
       },
       "mono": {
-        "displayName": "Handle Mono",
-        "purpose": "Banner handle, identity and team lines only."
+        "displayName": "Handle",
+        "purpose": "@itzz-inbathamizhanS only. Phone layer 52."
       }
     },
     "shadows": [],
     "motion": [
       {
-        "name": "ease-web",
+        "name": "ease-settle",
         "value": "cubic-bezier(.16,1,.3,1)",
-        "purpose": "Web build: thread draw, node pop, label rise, hub pulse."
+        "purpose": "Every entrance and the pulse."
       },
       {
-        "name": "ease-banner-rise",
-        "value": "cubic-bezier(.2,.7,.2,1)",
-        "purpose": "Banner lines rising into place (0.8s, staggered 0.12s)."
+        "name": "ghost-slide",
+        "value": "translateX(-28px) to 0, opacity 0 to 1, 2.2s",
+        "purpose": "Tamil ghost entrance."
       },
       {
-        "name": "ease-dew",
-        "value": "cubic-bezier(.45,0,.2,1)",
-        "purpose": "Dew travelling one thread."
+        "name": "banner-rise",
+        "value": "translateY(12px) to 0, 0.9s, delays .15/.35/.55s",
+        "purpose": "Handle, Latin name, identity line."
       },
       {
-        "name": "radial-draw",
-        "value": "1.1s, delays 0.10s to 0.62s",
-        "purpose": "Radials draw out from the hub."
+        "name": "banner-fade",
+        "value": "opacity 0 to 1, 1.6s, delay .5s",
+        "purpose": "Grid and web, as one group."
       },
       {
-        "name": "ring-draw",
-        "value": "1.2s, from 0.75s, 0.16s apart, outermost first",
-        "purpose": "Rings spiral in."
+        "name": "rule-draw",
+        "value": "stroke-dashoffset 1 to 0 on pathLength=1, 1s",
+        "purpose": "Card rules, staggered 0.09s in reading order from 0.20s."
       },
       {
-        "name": "node-catch",
-        "value": "pop 0.5s / rise 0.7s, 1.55s to 2.07s",
-        "purpose": "Nodes and labels catch as their ring passes."
+        "name": "card-rise",
+        "value": "translateY(10px) to 0, 0.8s, rule delay + 0.15s",
+        "purpose": "Card text after its rule."
       },
       {
-        "name": "hub-pulse",
-        "value": "2.6s infinite from 2.2s, scale 1 to 3.4, opacity .55 to 0",
-        "purpose": "Loop one of two."
-      },
-      {
-        "name": "dew",
-        "value": "8s infinite from 3s",
-        "purpose": "Loop two of two."
-      },
-      {
-        "name": "cursor-blink",
-        "value": "1.1s steps(1) x3",
-        "purpose": "Banner handle square."
-      },
-      {
-        "name": "grid-cell-in",
-        "value": "0.45s ease-out, delay 0.3s + 0.03s x (row + col)",
-        "purpose": "Contribution cells scale in on a diagonal."
-      },
-      {
-        "name": "grid-glow",
-        "value": "2.6s ease-in-out x2",
-        "purpose": "Busiest days."
-      },
-      {
-        "name": "grid-sweep",
-        "value": "6s ease-in-out from 1.8s, once",
-        "purpose": "Amber bar crosses the grid."
-      },
-      {
-        "name": "seed-draw",
-        "value": "0.7s ease-out per thread",
-        "purpose": "Banner corner web seed."
+        "name": "pulse",
+        "value": "scale 1 to 3, opacity .5 to 0, 2.6s, delay 2s, infinite",
+        "purpose": "Aran's dot ring; the only loop."
       },
       {
         "name": "reduced-motion",
-        "value": "animation:none; stroke-dashoffset:0; pulse and dew opacity:0",
-        "purpose": "Fallback on every animated class."
+        "value": "@media (prefers-reduced-motion:reduce)",
+        "purpose": "Remove all animation, show final state, hide the pulse ring."
       }
     ],
     "breakpoints": [
       {
-        "name": "phone-column",
-        "value": "350px"
+        "name": "banner-phone",
+        "value": "max-width: 520px (banner's rendered width)"
       },
       {
-        "name": "desktop-column",
-        "value": "830px"
+        "name": "card-phone",
+        "value": "max-width: 300px (card's rendered width)"
       }
     ]
   },
   "components": [
     {
-      "name": "Web Node with Label",
-      "kind": "custom",
-      "refersTo": "web-name",
-      "description": "A project caught on the web: open silk ring, Hind Madurai 600 name, tracked uppercase tag; threads stop short of the type.",
-      "html": "<svg class=\"ds-web-node\" viewBox=\"0 0 400 200\" width=\"400\" role=\"img\" aria-label=\"Kavach, threat intel\"><defs><mask id=\"ds-cut\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"400\" height=\"200\"><rect width=\"400\" height=\"200\" fill=\"#fff\"/><g fill=\"#000\" stroke=\"#000\" stroke-width=\"16\" stroke-linejoin=\"round\"><circle cx=\"200\" cy=\"160\" r=\"7.5\"/><text class=\"ds-name\" x=\"200\" y=\"90\" text-anchor=\"middle\">Kavach</text><text class=\"ds-tag\" x=\"200\" y=\"130\" text-anchor=\"middle\">THREAT INTEL</text></g></mask></defs><g mask=\"url(#ds-cut)\" fill=\"none\" stroke=\"#8B949E\" stroke-linecap=\"round\"><path d=\"M0 160H400\" stroke-opacity=\".30\" stroke-width=\"1.4\"/><path d=\"M200 0V200\" stroke-opacity=\".30\" stroke-width=\"1\"/><path d=\"M40 40Q120 90 200 60Q280 90 360 40\" stroke-opacity=\".19\" stroke-width=\"1\"/></g><circle cx=\"200\" cy=\"160\" r=\"6.5\" fill=\"none\" stroke=\"#8B949E\" stroke-width=\"2\"/><text class=\"ds-name\" x=\"200\" y=\"90\" text-anchor=\"middle\" fill=\"#E6EDF3\">Kavach</text><text class=\"ds-tag\" x=\"200\" y=\"130\" text-anchor=\"middle\" fill=\"#8B949E\">THREAT INTEL</text></svg>",
-      "css": ".ds-web-node{background:#0D1117;max-width:100%} .ds-web-node .ds-name{font-family:'Hind Madurai',sans-serif;font-weight:600;font-size:46px;letter-spacing:-.01em} .ds-web-node .ds-tag{font-family:'Hind Madurai',sans-serif;font-weight:500;font-size:30px;letter-spacing:.08em}"
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Half-width linked card: hairline rule, title, one muted sentence; no box or fill.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-rule\"></span><span class=\"ds-card-title\">Q-CAPS</span><span class=\"ds-card-desc\">Learn, test and scan post-quantum crypto</span></a>",
+      "css": ".ds-card{display:block;width:320px;padding:0 0 18px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-card-rule{display:block;height:1px;background:rgba(230,237,243,.28);transform-origin:left;transition:transform .6s cubic-bezier(.16,1,.3,1)}.ds-card-title{display:block;margin-top:34px;font-weight:600;font-size:28px;letter-spacing:-.01em;line-height:1}.ds-card-desc{display:block;margin-top:12px;font-weight:400;font-size:15.5px;color:#8B949E}.ds-card:hover .ds-card-rule,.ds-card:focus-visible .ds-card-rule{background:rgba(230,237,243,.6)}.ds-card:focus-visible{outline:2px solid #E3B341;outline-offset:4px}"
     },
     {
-      "name": "Hub (Aran)",
-      "kind": "custom",
-      "refersTo": "web-node-hub",
-      "description": "The centre of the web: solid amber disc with a looping pulse, Headline name, amber NOW tag.",
-      "html": "<svg class=\"ds-hub\" viewBox=\"0 0 300 200\" width=\"300\" role=\"img\" aria-label=\"Aran, now\"><circle class=\"ds-pulse\" cx=\"150\" cy=\"60\" r=\"9\" fill=\"#E3B341\"/><circle cx=\"150\" cy=\"60\" r=\"9\" fill=\"#E3B341\"/><text class=\"ds-name\" x=\"150\" y=\"132\" text-anchor=\"middle\" fill=\"#E6EDF3\">Aran</text><text class=\"ds-tag\" x=\"150\" y=\"170\" text-anchor=\"middle\" fill=\"#E3B341\">NOW</text></svg>",
-      "css": ".ds-hub{background:#0D1117} .ds-hub .ds-name{font-family:'Hind Madurai',sans-serif;font-weight:600;font-size:54px;letter-spacing:-.01em} .ds-hub .ds-tag{font-family:'Hind Madurai',sans-serif;font-weight:500;font-size:30px;letter-spacing:.08em} .ds-hub .ds-pulse{transform-box:fill-box;transform-origin:center;animation:ds-pulse 2.6s cubic-bezier(.16,1,.3,1) infinite both} @keyframes ds-pulse{0%{transform:scale(1);opacity:.55}70%,100%{transform:scale(3.4);opacity:0}} @media (prefers-reduced-motion:reduce){.ds-hub .ds-pulse{animation:none;opacity:0}}"
+      "name": "Current Project Card",
+      "kind": "card",
+      "refersTo": "project-card-status",
+      "description": "Aran: the card plus lowercase amber 'now' on the title baseline and the one pulsing dot.",
+      "html": "<a class=\"ds-now\" href=\"#\"><span class=\"ds-now-rule\"></span><span class=\"ds-now-dot\"></span><span class=\"ds-now-title\">Aran <em>now</em></span><span class=\"ds-now-desc\">Data-flow firewall for Indian banks</span></a>",
+      "css": ".ds-now{position:relative;display:block;width:320px;padding:0 0 18px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-now-rule{display:block;height:1px;width:298px;background:rgba(230,237,243,.28)}.ds-now-title{display:block;margin-top:34px;font-weight:600;font-size:28px;letter-spacing:-.01em;line-height:1}.ds-now-title em{font-style:normal;font-weight:500;font-size:14px;color:#E3B341;margin-left:6px}.ds-now-desc{display:block;margin-top:12px;font-size:15.5px;color:#8B949E}.ds-now-dot{position:absolute;left:288.5px;top:34.5px;width:7px;height:7px;border-radius:50%;background:#E3B341}.ds-now-dot::after{content:'';position:absolute;inset:0;border-radius:50%;background:#E3B341;animation:ds-pulse 2.6s cubic-bezier(.16,1,.3,1) 2s infinite both}@keyframes ds-pulse{0%{transform:scale(1);opacity:.5}70%,100%{transform:scale(3);opacity:0}}@media (prefers-reduced-motion:reduce){.ds-now-dot::after{animation:none;opacity:0}}.ds-now:focus-visible{outline:2px solid #E3B341;outline-offset:4px}"
     },
     {
-      "name": "Dew",
-      "kind": "custom",
-      "refersTo": "web-dew",
-      "description": "The single amber drop that travels one radial from the hub every 8 seconds.",
-      "html": "<svg class=\"ds-dew\" viewBox=\"0 0 400 60\" width=\"400\" aria-hidden=\"true\"><path d=\"M10 30H390\" stroke=\"#8B949E\" stroke-opacity=\".30\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle class=\"ds-drop\" cx=\"10\" cy=\"30\" r=\"3.5\" fill=\"#E3B341\"/></svg>",
-      "css": ".ds-dew{background:#0D1117} .ds-dew .ds-drop{animation:ds-dew 8s cubic-bezier(.45,0,.2,1) infinite both} @keyframes ds-dew{0%,8%{transform:translate(0,0);opacity:0}12%{opacity:1}52%{transform:translate(380px,0);opacity:1}58%,100%{transform:translate(380px,0);opacity:0}} @media (prefers-reduced-motion:reduce){.ds-dew .ds-drop{animation:none;opacity:0}}"
-    },
-    {
-      "name": "Banner Identity",
+      "name": "Banner Name Block",
       "kind": "custom",
       "refersTo": "banner-name",
-      "description": "Amber handle square that blinks three times, mono handle, Display name, mono identity line.",
-      "html": "<svg class=\"ds-banner\" viewBox=\"0 0 760 260\" width=\"760\" role=\"img\" aria-label=\"Inbathamizhan S\"><rect class=\"ds-blink\" x=\"64\" y=\"52\" width=\"12\" height=\"12\" fill=\"#E3B341\"/><text class=\"ds-mono\" x=\"90\" y=\"66\">@itzz-inbathamizhanS</text><text class=\"ds-name\" x=\"61\" y=\"160\">Inbathamizhan S</text><text class=\"ds-mono\" x=\"64\" y=\"222\">B.Tech CSE · KARE · Madurai, India</text></svg>",
-      "css": ".ds-banner{background:#0D1117;max-width:100%} .ds-banner .ds-mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:28px;fill:#8B949E} .ds-banner .ds-name{font-family:'Hind Madurai',sans-serif;font-weight:600;font-size:84px;letter-spacing:-1.2px;fill:#E6EDF3} .ds-banner .ds-blink{animation:ds-blink 1.1s steps(1) 3} @keyframes ds-blink{0%,49%{opacity:1}50%,100%{opacity:0}} @media (prefers-reduced-motion:reduce){.ds-banner .ds-blink{animation:none}}"
+      "description": "Tamil ghost behind the Latin name, identity line beneath, handle with amber square above.",
+      "html": "<div class=\"ds-banner\"><div class=\"ds-handle\"><i></i>@itzz-inbathamizhanS</div><div class=\"ds-ghost\" aria-hidden=\"true\">இன்பத்தமிழன்</div><div class=\"ds-name\">Inbathamizhan S</div><div class=\"ds-ident\">இன்பத்தமிழன் · B.Tech CSE · KARE · Madurai, India</div></div>",
+      "css": ".ds-banner{position:relative;width:640px;height:215px;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-handle{position:absolute;top:15px;left:0;display:flex;align-items:center;gap:7px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#8B949E}.ds-handle i{width:6px;height:6px;background:#E3B341}.ds-ghost{position:absolute;top:28px;left:0;font-weight:600;font-size:79px;line-height:1;color:rgba(230,237,243,.07);animation:ds-ghost 2.2s cubic-bezier(.16,1,.3,1) both}.ds-name{position:absolute;top:104px;left:-2.5px;font-weight:600;font-size:50px;letter-spacing:-.8px;line-height:1}.ds-ident{position:absolute;top:167px;left:0;font-weight:500;font-size:15px;color:#8B949E}@keyframes ds-ghost{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){.ds-ghost{animation:none}}"
     },
     {
       "name": "Contribution Grid",
       "kind": "custom",
-      "refersTo": "grid-cell-q4",
-      "description": "Five-level activity cells, 10 units on a 14 pitch; busiest days amber and glow twice. Values owned by update_grid.py.",
-      "html": "<svg class=\"ds-grid\" viewBox=\"0 0 84 24\" width=\"252\" aria-hidden=\"true\"><rect x=\"2\" y=\"7\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#161B22\"/><rect x=\"16\" y=\"7\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#2A313C\"/><rect x=\"30\" y=\"7\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#57606A\"/><rect x=\"44\" y=\"7\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#8B949E\"/><rect class=\"ds-hot\" x=\"58\" y=\"7\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#E3B341\"/></svg>",
-      "css": ".ds-grid{background:#0D1117} .ds-grid .ds-hot{animation:ds-glow 2.6s ease-in-out 2} @keyframes ds-glow{0%,100%{opacity:1}50%{opacity:.3}} @media (prefers-reduced-motion:reduce){.ds-grid .ds-hot{animation:none}}"
+      "refersTo": "grid-cell",
+      "description": "Week columns, Sunday on top; ink at .06/.14/.26/.42, amber for the busiest days.",
+      "html": "<div class=\"ds-grid\"><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.42\"></i><i style=\"opacity:.14\"></i><i class=\"ds-hot\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.42\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.14\"></i><i class=\"ds-hot\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i></div>",
+      "css": ".ds-grid{display:grid;grid-template-rows:repeat(7,10px);grid-auto-flow:column;grid-auto-columns:10px;gap:4px}.ds-grid i{display:block;width:10px;height:10px;border-radius:2px;background:#E6EDF3}.ds-grid i.ds-hot{background:#E3B341;opacity:1}"
     },
     {
-      "name": "Web Node (light)",
+      "name": "Handle Mark",
+      "kind": "chip",
+      "refersTo": "handle-square",
+      "description": "Sharp amber square before the monospace handle.",
+      "html": "<span class=\"ds-hm\"><i></i>@itzz-inbathamizhanS</span>",
+      "css": ".ds-hm{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:26px;color:#8B949E}.ds-hm i{width:12px;height:12px;background:#E3B341}"
+    },
+    {
+      "name": "Corner Web",
       "kind": "custom",
-      "refersTo": "web-name-light",
-      "description": "The same catch point on GitHub's light ground: deeper silk opacity, light ink and tag grey.",
-      "html": "<svg class=\"ds-web-node-l\" viewBox=\"0 0 400 200\" width=\"400\" role=\"img\" aria-label=\"Q-Lure, deception\"><g fill=\"none\" stroke=\"#8C959F\" stroke-linecap=\"round\"><path d=\"M0 160H180M220 160H400\" stroke-opacity=\".48\" stroke-width=\"1.4\"/><path d=\"M40 40Q90 70 120 62M280 62Q310 70 360 40\" stroke-opacity=\".32\" stroke-width=\"1\"/></g><circle cx=\"200\" cy=\"160\" r=\"6.5\" fill=\"none\" stroke=\"#8C959F\" stroke-width=\"2\"/><text class=\"ds-name\" x=\"200\" y=\"90\" text-anchor=\"middle\" fill=\"#1F2328\">Q-Lure</text><text class=\"ds-tag\" x=\"200\" y=\"130\" text-anchor=\"middle\" fill=\"#59636E\">DECEPTION</text></svg>",
-      "css": ".ds-web-node-l{background:#FFFFFF;max-width:100%} .ds-web-node-l .ds-name{font-family:'Hind Madurai',sans-serif;font-weight:600;font-size:46px;letter-spacing:-.01em} .ds-web-node-l .ds-tag{font-family:'Hind Madurai',sans-serif;font-weight:500;font-size:30px;letter-spacing:.08em}"
+      "refersTo": "",
+      "description": "The small spider web in the banner's bottom-right corner: five spokes, four sagging threads, ink at .25.",
+      "html": "<svg class=\"ds-web\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"#E6EDF3\" stroke-opacity=\".25\" stroke-width=\"1\"><path d=\"M100 100L20.0 100.0\"/><path d=\"M100 100L26.1 69.4\"/><path d=\"M100 100L43.4 43.4\"/><path d=\"M100 100L69.4 26.1\"/><path d=\"M100 100L100.0 20.0\"/><path d=\"M82.0 100.0Q84.8 97.0 83.4 93.1Q87.1 91.4 87.3 87.3Q91.4 87.1 93.1 83.4Q97.0 84.8 100.0 82.0\"/><path d=\"M66.0 100.0Q71.3 94.3 68.6 87.0Q75.7 83.8 76.0 76.0Q83.8 75.7 87.0 68.6Q94.3 71.3 100.0 66.0\"/><path d=\"M50.0 100.0Q57.8 91.6 53.8 80.9Q64.2 76.1 64.6 64.6Q76.1 64.2 80.9 53.8Q91.6 57.8 100.0 50.0\"/><path d=\"M34.0 100.0Q44.3 88.9 39.0 74.7Q52.8 68.5 53.3 53.3Q68.5 52.8 74.7 39.0Q88.9 44.3 100.0 34.0\"/></g></svg>",
+      "css": ".ds-web{display:block}"
     }
   ],
   "narrative": {
-    "northStar": "The Web He Spins",
-    "overview": "The profile is one spider web drawn in silk on GitHub's own ground. Aran sits at the hub in the only warm colour on the page; every other project is caught on a thread, named in Hind Madurai (the typeface named for his city) with a tracked uppercase tag beneath it. There are no cards, borders, panels or shadows. Structure is thread: radials, rings and the nodes where they meet. The banner above it is the same world at rest: his name, his handle, a real contribution grid and a small web seed spinning in the corner.\n\nEverything is an image, because GitHub's sanitizer strips CSS and scripts from the page. Each visual is an SVG (or a sourced PNG) with its fonts subset and embedded, swapped between dark and light through `<picture>` and `prefers-color-scheme`. The images carry no background of their own: the README sits on whichever GitHub ground the visitor uses (dark `#0D1117`, light `#FFFFFF`, and the dimmed and high-contrast variants), so every drawn colour has to hold on all of them.\n\nMotion is the web being built once, then two quiet loops: the hub breathing and a single dew drop travelling one thread. Every animated element has a `prefers-reduced-motion` fallback that leaves the finished web standing still.",
+    "northStar": "Inbam",
+    "overview": "He is named in his own language first. The banner sets இன்பத்தமிழன் as a quiet, full-width ground behind the Latin name, at a whisper of the text colour, and the Latin name, identity line and handle sit over it. The work follows as a calm two-column index: eight linked cards, each a hairline rule, a title and one plain sentence. Nothing is boxed, filled or shadowed; GitHub's own page shows through every image.\n\nThe system lives entirely inside committed SVG and PNG files, because GitHub's sanitizer strips every stylesheet and script from the README. Each image carries its own subset fonts, its own dark and light twin, its own phone layer and its own motion. One amber marks what is live: the handle, the project he is building now, and his busiest days. Secondary tones are never new hues; they are the theme's text colour at a lower opacity.\n\nMotion arrives once and settles: the Tamil ghost slides in slowly, the grid and the small web fade in together, the name and identity rise, then each card's rule draws across in reading order with its text rising after it. Afterwards only Aran's amber dot keeps pulsing.",
     "keyCharacteristics": [
-      "One web, one hub, one warm accent; everything else is cool grey silk and ink.",
-      "Thread is the only structure: no boxes, cards, borders, halos or shadows.",
-      "Labels are cut out of the silk with an SVG mask, so threads stop short of the type instead of running through it.",
-      "Silk is translucent grey so the same file reads on every GitHub ground.",
-      "The 3x3 mosaic is one scene viewed through nine windows; each window is one link.",
-      "Build-once motion, then only two loops, always with a reduced-motion fallback."
+      "Tamil name first, as a full-width ghost (fg at 7% dark, 6% light) behind the Latin name.",
+      "Transparent images on GitHub's unpainted grounds, in matched dark and light twins.",
+      "Hind Madurai throughout; JetBrains Mono only for the handle.",
+      "One amber, reserved for what is live or current.",
+      "Hairline rules instead of boxes; flat, no shadows.",
+      "Once-only entrance motion with a single loop, and reduced-motion fallbacks in every SVG."
     ],
     "rules": [
       {
-        "name": "The One Warm Thing Rule",
-        "body": "Amber marks only what is live or current: the hub, NOW, the dew, the handle square, the sweep, the busiest days. No project name, tag, thread or heading is ever amber.",
+        "name": "The Unpainted Ground Rule",
+        "body": "No image paints a background. Every SVG and PNG is transparent so it sits on whatever ground GitHub serves (dark, dimmed, light, high-contrast) without a seam.",
         "section": "colors"
       },
       {
-        "name": "The Translucent Silk Rule",
-        "body": "Web threads carry their grey through stroke opacity, not a mixed solid, so one file reads on dark, dimmed, high-contrast and light grounds alike.",
+        "name": "The One Amber Rule",
+        "body": "Amber marks only what is live: the handle square, the current project's \"now\" and dot, and the busiest grid days. A second accent, or amber used for decoration, breaks the system.",
         "section": "colors"
       },
       {
-        "name": "The Script Owns the Grid Rule",
-        "body": "The grid palette lives in `update_grid.py`; any colour change to the grid is made in the script and both banners together.",
+        "name": "The Opacity, Not Hue Rule",
+        "body": "Quieter tones are the theme ink at an opacity, never a new grey or a new colour. That is what lets one file read on every GitHub ground.",
         "section": "colors"
       },
       {
-        "name": "The Phone Floor Rule",
-        "body": "Names never go below 46 units and tags never below 30 in a 1290-wide scene; at phone width that is the smallest legible size, so new labels shorten rather than shrink.",
+        "name": "The Tamil First Rule",
+        "body": "The Tamil name comes before the Latin one, in reading order and in motion: it is the ground the Latin name sits on.",
         "section": "typography"
       },
       {
-        "name": "The Mono Is Data Rule",
-        "body": "JetBrains Mono is for the handle and identity lines in the banner only. Tags on the web are Hind Madurai, because mono there would be costume, not data.",
+        "name": "The Embedded Type Rule",
+        "body": "Every SVG embeds its own subset woff2 fonts as base64. GitHub serves images through `<img>`, which loads no external fonts. A glyph missing from the subset is drawn, not substituted: DHṚTI's underdot is a circle (r 3.1 at 56) because Hind Madurai has no U+1E5A.",
         "section": "typography"
       },
       {
-        "name": "The Embedded Glyph Rule",
-        "body": "Fonts are subset to the glyphs used. When the subset lacks a mark (the underdot in DHṚTI), it is drawn as geometry in the label's ink (a 2.6-unit dot), never left out silently and never pulled from a system font.",
-        "section": "typography"
+        "name": "The Half-Width Pair Rule",
+        "body": "Cards are exactly 50% wide, paired with no whitespace between them, and carry their own gutter inside the art. Never rely on Markdown spacing for layout.",
+        "section": "layout"
       },
       {
-        "name": "The Cut, Not Covered Rule",
-        "body": "Type sits on the web by masking the silk away beneath it (a 16-unit stroked cutout around each label, 7.5 around each node, 13 around the hub). No halos, no background rects, no boxes.",
+        "name": "The Rendered-Width Rule",
+        "body": "Phone legibility is solved inside each SVG with a width media query keyed to that image's own rendered size; there is no page CSS to do it.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Nothing casts a shadow or sits in a panel. Separation comes from hairline rules, opacity and space.",
         "section": "elevation"
+      },
+      {
+        "name": "The One Loop Rule",
+        "body": "Entrance motion plays once and settles; Aran's pulse is the only loop. Every animated SVG ends with a `prefers-reduced-motion` block that removes the animation and leaves the final state visible.",
+        "section": "components"
+      },
+      {
+        "name": "The Grid Contract Rule",
+        "body": "The `<!--grid-->` markers, the grid origin (1034, 40), pitch 14, cell 10, radius 2 and the five-level palette live in both banner SVGs and in `scripts/update_grid.py`. Change one, change both.",
+        "section": "components"
+      },
+      {
+        "name": "The One Link Per Image Rule",
+        "body": "An image can carry one link and no hotspots; every project is its own image, linked to its repo.",
+        "section": "components"
       }
     ],
     "dos": [
-      "Do keep every visual an SVG or PNG under `assets/`, in a dark and a light file swapped by `<picture>` and `prefers-color-scheme`; GitHub strips CSS and scripts from the page.",
-      "Do subset and embed every font as base64 inside the SVG; images in `<img>` cannot load external fonts.",
-      "Do give each image exactly one link and real alt text; an image cannot carry several hotspots.",
-      "Do draw silk with stroke opacity (dark .30 radials / .19 rings; light .48 / .32) and test on dark, dimmed, high-contrast and light grounds.",
-      "Do cut labels out of the silk with the mask; keep names at 46 units or more and tags at 30 or more in the 1290 scene.",
-      "Do keep amber for the hub, NOW, the dew, the handle square, the sweep and the busiest grid days.",
-      "Do give every new animation a `prefers-reduced-motion` fallback that leaves its finished state visible, and keep animated groups few.",
-      "Do preserve the `<!--grid-->` markers and change the grid palette in `scripts/update_grid.py`."
+      "**Do** ship every visual as a transparent SVG or PNG pair (dark and light) inside `<picture>` with `prefers-color-scheme`, with real alt text on the `<img>`.",
+      "**Do** embed subset Hind Madurai (and JetBrains Mono for the handle) as base64 woff2 inside each SVG, and draw any glyph the subset lacks.",
+      "**Do** derive quiet tones from the theme ink at an opacity: ghost .07/.06, grid .06/.14/.26/.42, web .25, rules .28/.40.",
+      "**Do** keep amber for what is live: handle square, the current project's \"now\" and pulse, and the busiest grid days.",
+      "**Do** solve phone legibility inside each SVG with a media query on its own rendered width (banner 520, cards 300).",
+      "**Do** keep animated elements few and grouped (the grid and web fade as one group), with a reduced-motion fallback in every file.",
+      "**Do** keep the grid markers and geometry in step with `scripts/update_grid.py`."
     ],
     "donts": [
-      "Don't add boxes, cards, panels, borders, halos, background rects or shadows; structure is thread.",
-      "Don't colour a project name, tag or thread amber, or introduce a second accent.",
-      "Don't use mono outside the banner's handle and identity lines.",
-      "Don't add loops beyond the hub pulse and the dew, or motion that does not show something true.",
-      "Don't draw the web as a character; it stays a plain web shape.",
-      "Don't design hover states; GitHub cannot show them."
+      "**Don't** paint a background, box, panel or shadow behind any content; GitHub's ground always shows through.",
+      "**Don't** add a second accent colour or a new grey; use the ink at an opacity.",
+      "**Don't** add a second loop; Aran's pulse is the only one.",
+      "**Don't** add tags, eyebrows or labels above titles; the lowercase \"now\" on the baseline is the only status.",
+      "**Don't** add icons outside the Toolbox strip, or turn the corner web into a character.",
+      "**Don't** rely on page CSS, scripts, hover states, image maps or external fonts; none survive GitHub's sanitizer or `<img>`.",
+      "**Don't** put whitespace between paired card links; it breaks the two-column row."
     ]
   }
 }
