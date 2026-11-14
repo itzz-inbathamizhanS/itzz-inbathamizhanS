@@ -11,14 +11,14 @@ Scope: README.md and its image assets. Visitor mode: Experience. Audience: recru
 
 ## Direction contract
 
-THESIS: His work is a web he spins. The README's centrepiece is one living spider web with Aran at the hub and every project caught on its threads, each a link. It refuses the category default of stat cards, badge walls and typing banners, and the bulleted project list.
+THESIS: He is named in his own language first. The banner sets இன்பத்தமிழன் as a quiet, full-width ground behind the Latin name, and the work follows as a calm two-column index of linked cards. It refuses stat cards, badge walls, typing banners, and the dressed-up-object profiles he turned down.
 
-OWN-WORLD: GitHub's own grounds (#0D1117 dark, #FFFFFF light), silk threads in a single cool grey, one amber (#E3B341 dark, #9A6700 light) reserved for the hub and the live dot. Project names in Hind Madurai 600 (named for his city), area tags in tracked uppercase Hind Madurai 500 beneath each name (changed from JetBrains Mono during review: mono there would be a technical costume, not data). The banner keeps mono only for his handle and identity line. No boxes, cards, borders or shadows anywhere; structure is thread.
+OWN-WORLD: GitHub's own grounds (never painted), text in GitHub's fg/muted greys, Tamil ghost at ~7% of fg, hairline rules in translucent grey, one amber (#E3B341 dark, #9A6700 light) for the handle square, Aran's NOW tag and pulse, and the grid's busiest days. Type: Hind Madurai throughout (Tamil 600 ghost, Latin 600 names, 500 tracked uppercase tags, 400 descriptions); JetBrains Mono only for the handle. No boxes, fills, shadows or icons.
 
-STORY: The banner says who (name, handle, real commits, a web seed in the corner). Below, the web spins outward from Aran, and the visitor sees the range of his work in one shape, taps a project, scrolls to experience, toolbox, contact and the quote.
+STORY: The banner says who, in Tamil and English, with real commits and the small web in the corner; the intro and Now say what he does now; eight cards say what he has built, each one a link; then experience, toolbox, contact and his quote.
 
-FIRST VIEWPORT: Banner full width; intro line; a one-line "Now" paragraph (kept as text because the Aran live-console link must be a working text link); then the web, hub centred, 3×3 tiles at 100% width, names legible on desktop and phone. Aran's name outranks the satellites.
+FIRST VIEWPORT: Banner full width (Tamil ghost spanning ~90% of it, fully visible, Latin name 100 units over its lower half, identity line beneath with team at right); intro; Now; Work cards begin, two per row, Aran first with amber tag and pulse.
 
-FORM: Web of work, IMPECCABLE'S PICK chosen over the dealt "Your words, big" (third roll); seed: 95421fce0570f81b. Signature motion: radials draw out from the hub, rings spiral in, nodes catch as their ring passes, then a single amber dew point travels one thread every few seconds; Aran's hub pulses.
+FORM: "Inbam" (option B of three image options the user compared after the web build; chosen by the user in his words "b ok in tamil use full name"); seed: 95421fce0570f81b. Signature motion: the Tamil ghost slides in slowly, the name and identity rise, rules draw across each card in reading order, card text rises after its rule; afterwards only Aran's pulse loops.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
