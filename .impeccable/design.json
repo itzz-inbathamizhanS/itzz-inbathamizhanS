@@ -34,19 +34,19 @@
           "#ECEFF2"
         ]
       },
-      "amber-dark": {
+      "sage-dark": {
         "role": "primary",
-        "displayName": "Live Amber (dark theme)",
-        "canonical": "oklch(79.0% 0.139 85.2)",
+        "displayName": "Live Sage (dark theme)",
+        "canonical": "oklch(75.8% 0.037 154.1)",
         "tonalRamp": [
-          "#120900",
-          "#342100",
-          "#593C00",
-          "#815900",
-          "#A47B01",
-          "#C0A15C",
-          "#DDC798",
-          "#FAEDD2"
+          "#070D09",
+          "#1D2720",
+          "#354439",
+          "#4F6355",
+          "#6E8474",
+          "#92A497",
+          "#BAC8BE",
+          "#E8F1EB"
         ]
       },
       "fg-light": {
@@ -79,50 +79,50 @@
           "#ECEFF2"
         ]
       },
-      "amber-light": {
+      "sage-light": {
         "role": "primary",
-        "displayName": "Live Amber (light theme)",
-        "canonical": "oklch(55.4% 0.117 75.0)",
+        "displayName": "Live Sage (light theme)",
+        "canonical": "oklch(49.6% 0.052 154.9)",
         "tonalRamp": [
-          "#130900",
-          "#352000",
-          "#5A3B00",
-          "#835700",
-          "#A77831",
-          "#C39E6B",
-          "#DFC5A1",
-          "#FBECD8"
+          "#060D08",
+          "#19281E",
+          "#304637",
+          "#496652",
+          "#678671",
+          "#8CA694",
+          "#B6CABC",
+          "#E6F2E9"
         ]
       }
     },
     "typographyMeta": {
       "ghost": {
         "displayName": "Tamil Ghost",
-        "purpose": "இன்பத்தமிழன் edge to edge behind the Latin name, ink at .07 dark / .06 light, aria-hidden."
+        "purpose": "இன்பத்தமிழன் ச across ~78% of the banner behind the Latin name, fill ink .07 dark / .06 light, one span per letter cluster for the trace, aria-hidden."
       },
       "display": {
         "displayName": "Display",
-        "purpose": "The Latin name in the banner, 5 units left of the column edge."
+        "purpose": "The Latin name in the banner, 3.5 units left of the column edge."
       },
       "title": {
         "displayName": "Card Title",
-        "purpose": "Project card titles; shrink to fit. Phone layer 80."
+        "purpose": "Project card titles. Phone layer 50."
       },
       "body": {
         "displayName": "Card Description",
-        "purpose": "One muted sentence per card, at most two lines. Phone layer 46, line advance 54.3."
+        "purpose": "One muted sentence per card, one line on desktop. Phone layer 44, at most two lines, line advance 50.6."
       },
       "label": {
         "displayName": "Identity",
-        "purpose": "Banner identity line; Tamil run in Hind Madurai Tamil 500. Phone layer 52."
+        "purpose": "Banner identity line; Tamil run in Hind Madurai Tamil 500. Phone layer 44."
       },
       "status": {
         "displayName": "Status",
-        "purpose": "Aran's lowercase amber 'now', half the title size, on the title baseline."
+        "purpose": "Aran's lowercase sage 'now', half the title size, on the title baseline. Phone layer 40."
       },
       "mono": {
         "displayName": "Handle",
-        "purpose": "@itzz-inbathamizhanS only. Phone layer 52."
+        "purpose": "@itzz-inbathamizhanS only. Phone layer 44."
       }
     },
     "shadows": [],
@@ -130,12 +130,17 @@
       {
         "name": "ease-settle",
         "value": "cubic-bezier(.16,1,.3,1)",
-        "purpose": "Every entrance and the pulse."
+        "purpose": "Rises, fades, rule draws and the pulse."
       },
       {
-        "name": "ghost-slide",
-        "value": "translateX(-28px) to 0, opacity 0 to 1, 2.2s",
-        "purpose": "Tamil ghost entrance."
+        "name": "ease-trace",
+        "value": "cubic-bezier(.45,0,.25,1)",
+        "purpose": "The Tamil ghost's letter trace."
+      },
+      {
+        "name": "ghost-trace",
+        "value": "per letter cluster: stroke-dashoffset 900 to 0 at stroke-opacity .55 (0-70%), then stroke to 0 and fill to .07/.06 (70-100%), 2.6s, staggered 0.22s from 0.20s",
+        "purpose": "The Tamil name writes itself left to right, then settles into its faint fill. Phone stroke-width 4 (desktop 1.4)."
       },
       {
         "name": "banner-rise",
@@ -165,7 +170,7 @@
       {
         "name": "reduced-motion",
         "value": "@media (prefers-reduced-motion:reduce)",
-        "purpose": "Remove all animation, show final state, hide the pulse ring."
+        "purpose": "Remove all animation, show final state (ghost fill settled, no stroke), hide the pulse ring."
       }
     ],
     "breakpoints": [
@@ -186,39 +191,39 @@
       "refersTo": "project-card",
       "description": "Half-width linked card: hairline rule, title, one muted sentence; no box or fill.",
       "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-rule\"></span><span class=\"ds-card-title\">Q-CAPS</span><span class=\"ds-card-desc\">Learn, test and scan post-quantum crypto</span></a>",
-      "css": ".ds-card{display:block;width:320px;padding:0 0 18px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-card-rule{display:block;height:1px;background:rgba(230,237,243,.28);transform-origin:left;transition:transform .6s cubic-bezier(.16,1,.3,1)}.ds-card-title{display:block;margin-top:34px;font-weight:600;font-size:28px;letter-spacing:-.01em;line-height:1}.ds-card-desc{display:block;margin-top:12px;font-weight:400;font-size:15.5px;color:#8B949E}.ds-card:hover .ds-card-rule,.ds-card:focus-visible .ds-card-rule{background:rgba(230,237,243,.6)}.ds-card:focus-visible{outline:2px solid #E3B341;outline-offset:4px}"
+      "css": ".ds-card{display:block;width:320px;padding:0 0 14px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-card-rule{display:block;height:1px;width:298px;background:rgba(230,237,243,.22);transition:background .3s cubic-bezier(.16,1,.3,1)}.ds-card-title{display:block;margin-top:23px;font-weight:600;font-size:21px;letter-spacing:-.01em;line-height:1}.ds-card-desc{display:block;margin-top:9px;font-weight:400;font-size:13px;color:#8B949E}.ds-card:hover .ds-card-rule,.ds-card:focus-visible .ds-card-rule{background:rgba(230,237,243,.5)}.ds-card:focus-visible{outline:2px solid #9FB8A6;outline-offset:4px}"
     },
     {
       "name": "Current Project Card",
       "kind": "card",
       "refersTo": "project-card-status",
-      "description": "Aran: the card plus lowercase amber 'now' on the title baseline and the one pulsing dot.",
+      "description": "Aran: the card plus lowercase sage 'now' on the title baseline and the one pulsing dot.",
       "html": "<a class=\"ds-now\" href=\"#\"><span class=\"ds-now-rule\"></span><span class=\"ds-now-dot\"></span><span class=\"ds-now-title\">Aran <em>now</em></span><span class=\"ds-now-desc\">Data-flow firewall for Indian banks</span></a>",
-      "css": ".ds-now{position:relative;display:block;width:320px;padding:0 0 18px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-now-rule{display:block;height:1px;width:298px;background:rgba(230,237,243,.28)}.ds-now-title{display:block;margin-top:34px;font-weight:600;font-size:28px;letter-spacing:-.01em;line-height:1}.ds-now-title em{font-style:normal;font-weight:500;font-size:14px;color:#E3B341;margin-left:6px}.ds-now-desc{display:block;margin-top:12px;font-size:15.5px;color:#8B949E}.ds-now-dot{position:absolute;left:288.5px;top:34.5px;width:7px;height:7px;border-radius:50%;background:#E3B341}.ds-now-dot::after{content:'';position:absolute;inset:0;border-radius:50%;background:#E3B341;animation:ds-pulse 2.6s cubic-bezier(.16,1,.3,1) 2s infinite both}@keyframes ds-pulse{0%{transform:scale(1);opacity:.5}70%,100%{transform:scale(3);opacity:0}}@media (prefers-reduced-motion:reduce){.ds-now-dot::after{animation:none;opacity:0}}.ds-now:focus-visible{outline:2px solid #E3B341;outline-offset:4px}"
+      "css": ".ds-now{position:relative;display:block;width:320px;padding:0 0 14px;text-decoration:none;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-now-rule{display:block;height:1px;width:298px;background:rgba(230,237,243,.22)}.ds-now-title{display:block;margin-top:23px;font-weight:600;font-size:21px;letter-spacing:-.01em;line-height:1}.ds-now-title em{font-style:normal;font-weight:500;font-size:10.5px;color:#9FB8A6;margin-left:4px}.ds-now-desc{display:block;margin-top:9px;font-size:13px;color:#8B949E}.ds-now-dot{position:absolute;left:289px;top:26px;width:6px;height:6px;border-radius:50%;background:#9FB8A6}.ds-now-dot::after{content:'';position:absolute;inset:0;border-radius:50%;background:#9FB8A6;animation:ds-pulse 2.6s cubic-bezier(.16,1,.3,1) 2s infinite both}@keyframes ds-pulse{0%{transform:scale(1);opacity:.5}70%,100%{transform:scale(3);opacity:0}}@media (prefers-reduced-motion:reduce){.ds-now-dot::after{animation:none;opacity:0}}.ds-now:focus-visible{outline:2px solid #9FB8A6;outline-offset:4px}"
     },
     {
       "name": "Banner Name Block",
       "kind": "custom",
       "refersTo": "banner-name",
-      "description": "Tamil ghost behind the Latin name, identity line beneath, handle with amber square above.",
-      "html": "<div class=\"ds-banner\"><div class=\"ds-handle\"><i></i>@itzz-inbathamizhanS</div><div class=\"ds-ghost\" aria-hidden=\"true\">இன்பத்தமிழன்</div><div class=\"ds-name\">Inbathamizhan S</div><div class=\"ds-ident\">இன்பத்தமிழன் · B.Tech CSE · KARE · Madurai, India</div></div>",
-      "css": ".ds-banner{position:relative;width:640px;height:215px;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-handle{position:absolute;top:15px;left:0;display:flex;align-items:center;gap:7px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#8B949E}.ds-handle i{width:6px;height:6px;background:#E3B341}.ds-ghost{position:absolute;top:28px;left:0;font-weight:600;font-size:79px;line-height:1;color:rgba(230,237,243,.07);animation:ds-ghost 2.2s cubic-bezier(.16,1,.3,1) both}.ds-name{position:absolute;top:104px;left:-2.5px;font-weight:600;font-size:50px;letter-spacing:-.8px;line-height:1}.ds-ident{position:absolute;top:167px;left:0;font-weight:500;font-size:15px;color:#8B949E}@keyframes ds-ghost{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){.ds-ghost{animation:none}}"
+      "description": "Tamil ghost that traces itself letter by letter behind the Latin name, identity line beneath, handle with sage square above.",
+      "html": "<div class=\"ds-banner\"><div class=\"ds-handle\"><i></i>@itzz-inbathamizhanS</div><svg class=\"ds-ghost\" viewBox=\"0 0 1000 140\" aria-hidden=\"true\"><text x=\"0\" y=\"110\"><tspan style=\"animation-delay:.20s\">இ</tspan><tspan style=\"animation-delay:.42s\">ன்</tspan><tspan style=\"animation-delay:.64s\">ப</tspan><tspan style=\"animation-delay:.86s\">த்</tspan><tspan style=\"animation-delay:1.08s\">த</tspan><tspan style=\"animation-delay:1.30s\">மி</tspan><tspan style=\"animation-delay:1.52s\">ழ</tspan><tspan style=\"animation-delay:1.74s\">ன்</tspan> <tspan style=\"animation-delay:1.96s\">ச</tspan></text></svg><div class=\"ds-name\">Inbathamizhan S</div><div class=\"ds-ident\">இன்பத்தமிழன் ச · B.Tech CSE · KARE · Madurai, India</div></div>",
+      "css": ".ds-banner{position:relative;width:640px;height:165px;color:#E6EDF3;font-family:'Hind Madurai',sans-serif;}.ds-handle{position:absolute;top:8px;left:0;display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:#8B949E}.ds-handle i{width:5px;height:5px;background:#9FB8A6}.ds-ghost{position:absolute;top:20px;left:0;width:500px;overflow:visible}.ds-ghost text{font-family:'Hind Madurai',sans-serif;font-weight:600;font-size:110px;fill:#E6EDF3;fill-opacity:.07;stroke:#E6EDF3;stroke-opacity:0;stroke-width:1.4;stroke-dasharray:900;stroke-dashoffset:900}.ds-ghost tspan{animation:ds-trace 2.6s cubic-bezier(.45,0,.25,1) both}@keyframes ds-trace{0%{stroke-dashoffset:900;stroke-opacity:.55;fill-opacity:0}70%{stroke-dashoffset:0;stroke-opacity:.55;fill-opacity:0}100%{stroke-dashoffset:0;stroke-opacity:0;fill-opacity:.07}}.ds-name{position:absolute;top:82px;left:-1.75px;font-weight:600;font-size:35px;letter-spacing:-.5px;line-height:1}.ds-ident{position:absolute;top:124px;left:0;font-weight:500;font-size:12px;color:#8B949E}@media (prefers-reduced-motion:reduce){.ds-ghost tspan{animation:none}}"
     },
     {
       "name": "Contribution Grid",
       "kind": "custom",
       "refersTo": "grid-cell",
-      "description": "Week columns, Sunday on top; ink at .06/.14/.26/.42, amber for the busiest days.",
+      "description": "Week columns, Sunday on top; ink at .06/.14/.26/.42, sage for the busiest days.",
       "html": "<div class=\"ds-grid\"><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.42\"></i><i style=\"opacity:.14\"></i><i class=\"ds-hot\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.42\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.26\"></i><i style=\"opacity:.14\"></i><i class=\"ds-hot\"></i><i style=\"opacity:.06\"></i><i style=\"opacity:.14\"></i><i style=\"opacity:.06\"></i></div>",
-      "css": ".ds-grid{display:grid;grid-template-rows:repeat(7,10px);grid-auto-flow:column;grid-auto-columns:10px;gap:4px}.ds-grid i{display:block;width:10px;height:10px;border-radius:2px;background:#E6EDF3}.ds-grid i.ds-hot{background:#E3B341;opacity:1}"
+      "css": ".ds-grid{display:grid;grid-template-rows:repeat(7,10px);grid-auto-flow:column;grid-auto-columns:10px;gap:4px}.ds-grid i{display:block;width:10px;height:10px;border-radius:2px;background:#E6EDF3}.ds-grid i.ds-hot{background:#9FB8A6;opacity:1}"
     },
     {
       "name": "Handle Mark",
       "kind": "chip",
       "refersTo": "handle-square",
-      "description": "Sharp amber square before the monospace handle.",
+      "description": "Sharp sage square before the monospace handle.",
       "html": "<span class=\"ds-hm\"><i></i>@itzz-inbathamizhanS</span>",
-      "css": ".ds-hm{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:26px;color:#8B949E}.ds-hm i{width:12px;height:12px;background:#E3B341}"
+      "css": ".ds-hm{display:inline-flex;align-items:center;gap:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:21px;color:#8B949E}.ds-hm i{width:10px;height:10px;background:#9FB8A6}"
     },
     {
       "name": "Corner Web",
@@ -231,12 +236,12 @@
   ],
   "narrative": {
     "northStar": "Inbam",
-    "overview": "He is named in his own language first. The banner sets இன்பத்தமிழன் as a quiet, full-width ground behind the Latin name, at a whisper of the text colour, and the Latin name, identity line and handle sit over it. The work follows as a calm two-column index: eight linked cards, each a hairline rule, a title and one plain sentence. Nothing is boxed, filled or shadowed; GitHub's own page shows through every image.\n\nThe system lives entirely inside committed SVG and PNG files, because GitHub's sanitizer strips every stylesheet and script from the README. Each image carries its own subset fonts, its own dark and light twin, its own phone layer and its own motion. One amber marks what is live: the handle, the project he is building now, and his busiest days. Secondary tones are never new hues; they are the theme's text colour at a lower opacity.\n\nMotion arrives once and settles: the Tamil ghost slides in slowly, the grid and the small web fade in together, the name and identity rise, then each card's rule draws across in reading order with its text rising after it. Afterwards only Aran's amber dot keeps pulsing.",
+    "overview": "He is named in his own language first. The banner writes இன்பத்தமிழன் ச by hand, one letter cluster at a time, then lets it settle as a quiet ground behind the Latin name at a whisper of the text colour; the Latin name, identity line and handle sit over it. The work follows as a calm two-column index: eight linked cards, each a hairline rule, a title and one plain sentence. Nothing is boxed, filled or shadowed; GitHub's own page shows through every image. Everything is set at a quiet scale: the banner is short and the cards are small.\n\nThe system lives entirely inside committed SVG and PNG files, because GitHub's sanitizer strips every stylesheet and script from the README. Each image carries its own subset fonts, its own dark and light twin, its own phone layer and its own motion. One neutral sage marks what is live: the handle, the project he is building now, and his busiest days. Secondary tones are never new hues; they are the theme's text colour at a lower opacity.\n\nMotion arrives once and settles: the Tamil name traces itself left to right and fades into its faint fill, the grid and the small web fade in together, the handle, name and identity rise, then each card's rule draws across in reading order with its text rising after it. Afterwards only Aran's sage dot keeps pulsing.",
     "keyCharacteristics": [
-      "Tamil name first, as a full-width ghost (fg at 7% dark, 6% light) behind the Latin name.",
+      "Tamil name first, with the initial (இன்பத்தமிழன் ச), as a ghost across about 78% of the banner (fg at 7% dark, 6% light) behind the Latin name.",
       "Transparent images on GitHub's unpainted grounds, in matched dark and light twins.",
       "Hind Madurai throughout; JetBrains Mono only for the handle.",
-      "One amber, reserved for what is live or current.",
+      "One neutral sage, reserved for what is live or current; no warm accent.",
       "Hairline rules instead of boxes; flat, no shadows.",
       "Once-only entrance motion with a single loop, and reduced-motion fallbacks in every SVG."
     ],
@@ -247,8 +252,8 @@
         "section": "colors"
       },
       {
-        "name": "The One Amber Rule",
-        "body": "Amber marks only what is live: the handle square, the current project's \"now\" and dot, and the busiest grid days. A second accent, or amber used for decoration, breaks the system.",
+        "name": "The One Sage Rule",
+        "body": "Sage marks only what is live: the handle square, the current project's \"now\" and dot, and the busiest grid days. A second accent, a warm accent, or sage used for decoration breaks the system.",
         "section": "colors"
       },
       {
@@ -258,12 +263,12 @@
       },
       {
         "name": "The Tamil First Rule",
-        "body": "The Tamil name comes before the Latin one, in reading order and in motion: it is the ground the Latin name sits on.",
+        "body": "The Tamil name comes before the Latin one, in reading order and in motion: it is written first, and it is the ground the Latin name sits on. It carries his initial (ச) wherever the Tamil name appears: ghost, identity line, alt and aria text.",
         "section": "typography"
       },
       {
         "name": "The Embedded Type Rule",
-        "body": "Every SVG embeds its own subset woff2 fonts as base64. GitHub serves images through `<img>`, which loads no external fonts. A glyph missing from the subset is drawn, not substituted: DHṚTI's underdot is a circle (r 3.1 at 56) because Hind Madurai has no U+1E5A.",
+        "body": "Every SVG embeds its own subset woff2 fonts as base64. GitHub serves images through `<img>`, which loads no external fonts. A glyph missing from the subset is drawn, not substituted: DHṚTI's underdot is a circle (r 2.3 at 42, r 2.8 at 50) because Hind Madurai has no U+1E5A.",
         "section": "typography"
       },
       {
@@ -288,7 +293,7 @@
       },
       {
         "name": "The Grid Contract Rule",
-        "body": "The `<!--grid-->` markers, the grid origin (1034, 40), pitch 14, cell 10, radius 2 and the five-level palette live in both banner SVGs and in `scripts/update_grid.py`. Change one, change both.",
+        "body": "The `<!--grid-->` markers, the grid origin (1034, 30), pitch 14, cell 10, radius 2 and the five-level palette live in both banner SVGs and in `scripts/update_grid.py`. Change one, change both.",
         "section": "components"
       },
       {
@@ -300,15 +305,15 @@
     "dos": [
       "**Do** ship every visual as a transparent SVG or PNG pair (dark and light) inside `<picture>` with `prefers-color-scheme`, with real alt text on the `<img>`.",
       "**Do** embed subset Hind Madurai (and JetBrains Mono for the handle) as base64 woff2 inside each SVG, and draw any glyph the subset lacks.",
-      "**Do** derive quiet tones from the theme ink at an opacity: ghost .07/.06, grid .06/.14/.26/.42, web .25, rules .28/.40.",
-      "**Do** keep amber for what is live: handle square, the current project's \"now\" and pulse, and the busiest grid days.",
+      "**Do** derive quiet tones from the theme ink at an opacity: ghost .07/.06, trace stroke .55, grid .06/.14/.26/.42, web .25, rules .22/.32.",
+      "**Do** keep sage for what is live: handle square, the current project's \"now\" and pulse, and the busiest grid days.",
       "**Do** solve phone legibility inside each SVG with a media query on its own rendered width (banner 520, cards 300).",
-      "**Do** keep animated elements few and grouped (the grid and web fade as one group), with a reduced-motion fallback in every file.",
+      "**Do** keep animated elements few and grouped (the grid and web fade as one group; the ghost's clusters share one trace), with a reduced-motion fallback in every file.",
       "**Do** keep the grid markers and geometry in step with `scripts/update_grid.py`."
     ],
     "donts": [
       "**Don't** paint a background, box, panel or shadow behind any content; GitHub's ground always shows through.",
-      "**Don't** add a second accent colour or a new grey; use the ink at an opacity.",
+      "**Don't** add a second accent colour, bring back amber or any warm yellow, or add a new grey; use the ink at an opacity.",
       "**Don't** add a second loop; Aran's pulse is the only one.",
       "**Don't** add tags, eyebrows or labels above titles; the lowercase \"now\" on the baseline is the only status.",
       "**Don't** add icons outside the Toolbox strip, or turn the corner web into a character.",
