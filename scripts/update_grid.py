@@ -3,7 +3,7 @@
 
 Columns are weeks (oldest on the left), rows are weekdays (Sunday on top),
 the same layout as GitHub's own contribution graph. The busiest days get the
-amber accent; quieter days step up in opacity of the text colour.
+sage accent; quieter days step up in opacity of the text colour.
 """
 import json
 import os
@@ -12,14 +12,14 @@ import sys
 import urllib.request
 
 USER = os.environ.get("GH_USER", "itzz-inbathamizhanS")
-WEEKS, GX, GY, PITCH = 18, 1034, 40, 14   # grid ends at the banner's right edge (1280)
+WEEKS, GX, GY, PITCH = 18, 1034, 30, 14   # grid ends at the banner's right edge (1280)
 
 PALETTES = {
     # (colour, opacity): drawn in the theme's own text colour so the grid reads on every GitHub ground
     "assets/banner-dark.svg":  {"none": ("#E6EDF3", ".06"), "q1": ("#E6EDF3", ".14"), "q2": ("#E6EDF3", ".26"),
-                                "q3": ("#E6EDF3", ".42"), "q4": ("#E3B341", "1")},
+                                "q3": ("#E6EDF3", ".42"), "q4": ("#9FB8A6", "1")},
     "assets/banner-light.svg": {"none": ("#1F2328", ".06"), "q1": ("#1F2328", ".14"), "q2": ("#1F2328", ".26"),
-                                "q3": ("#1F2328", ".42"), "q4": ("#9A6700", "1")},
+                                "q3": ("#1F2328", ".42"), "q4": ("#4A6B55", "1")},
 }
 LEVEL = {"NONE": "none", "FIRST_QUARTILE": "q1", "SECOND_QUARTILE": "q2", "THIRD_QUARTILE": "q3", "FOURTH_QUARTILE": "q4"}
 QUERY = """query($login: String!) {
