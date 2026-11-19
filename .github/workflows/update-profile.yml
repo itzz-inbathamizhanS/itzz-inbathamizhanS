@@ -28,17 +28,19 @@ jobs:
       - name: Install font tools
         run: pip install fonttools brotli
 
-      - name: Update Now line and Work cards
-        run: python scripts/update_profile.py
+      - name: Update Now and Work, then commit (retries if main moved)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
-
-      - name: Commit if changed
         run: |
-          git add -A
-          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh Now and Work"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            python scripts/update_profile.py
+            git add -A
+            if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+            git commit -m "Refresh Now and Work"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "main moved; retrying ($attempt)"; sleep 5
+          done
+          exit 1

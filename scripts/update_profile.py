@@ -61,7 +61,7 @@ F600, F500, F400 = (os.path.join(FONTS, f"hind-madurai-latin-{w}-normal.woff2") 
 W600, W500, W400 = metrics(F600), metrics(F500), metrics(F400)
 
 def sub(path, text):
-    f = TTFont(path)
+    f = TTFont(path, recalcTimestamp=False)   # no timestamps: same input, same bytes, no empty commits
     o = subset.Options(); o.flavor = "woff2"
     s = subset.Subsetter(o); s.populate(text=text); s.subset(f)
     b = io.BytesIO(); f.flavor = "woff2"; f.save(b)
