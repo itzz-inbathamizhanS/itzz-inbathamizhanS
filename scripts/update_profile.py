@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Keep the profile's "Now" line and Work cards in step with real activity.
 
-* Now: the public repo you pushed to most recently, with its latest commit.
+* Now: the public repo you pushed to most recently (including team forks you have
+  pushed to), with its latest commit.
 * Work: every project in data/projects.json as a linked card; new public repos
   created on or after `auto_add_after` are added automatically from their
   GitHub description. The current project moves to the front and gets the sage
@@ -152,7 +153,14 @@ def replace_block(text, tag, body):
 # ---------------------------------------------------------------- main
 def main():
     all_repos = repos()
-    public = [r for r in all_repos if not r.get("fork") and not r.get("archived") and not r.get("private") and r["name"] != USER]
+    def worked_on(r):
+        """Own repos always count; a fork counts once you have pushed to it after forking (team projects)."""
+        if not r.get("fork"):
+            return True
+        made = dt.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00"))
+        pushed = dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))
+        return (pushed - made).total_seconds() > 300
+    public = [r for r in all_repos if worked_on(r) and not r.get("archived") and not r.get("private") and r["name"] != USER]
     known = {p["repo"].lower() for p in cfg["projects"]} | {s.lower() for s in cfg.get("skip", [])}
 
     # 1. add new projects
