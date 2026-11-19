@@ -1,0 +1,19 @@
+{
+  "_about": "Cards shown under Work. Edit freely: change a line, reorder, or remove an entry. New public repos created after auto_add_after are added by the daily job using their GitHub description; list a repo in skip to keep it off the profile.",
+  "user": "itzz-inbathamizhanS",
+  "auto_add_after": "2026-11-19",
+  "projects": [
+    {"repo": "Aran", "name": "Aran", "line": "Data-flow firewall for Indian banks", "live": "https://aran-console.vercel.app"},
+    {"repo": "QLure", "name": "Q-Lure", "line": "Decoy services that explain every verdict"},
+    {"repo": "Q-CAPS", "name": "Q-CAPS", "line": "Learn, test and scan post-quantum crypto"},
+    {"repo": "kavach", "name": "Kavach", "line": "Threat intelligence for SOC teams"},
+    {"repo": "HybridDFIR", "name": "Hybrid DFIR", "line": "Air-gapped memory and disk forensics"},
+    {"repo": "dhriti", "name": "DHṚTI", "line": "ML-guided repair for faulty quantum circuits"},
+    {"repo": "zero-trust-smart-campus-ns3", "name": "Zero-trust campus", "line": "Risk-based quarantine that heals itself"},
+    {"repo": "the-amazing-web", "name": "The Amazing Web", "line": "Interactive 3D map of the Spider-Verse"}
+  ],
+  "now_lines": {
+    "Aran": "a data-flow firewall that keeps Aadhaar, PAN, UPI IDs and OTPs out of logs, vendors and AI tools"
+  },
+  "skip": ["itzz-inbathamizhanS", "IterEV", "Mugamoodi"]
+}
