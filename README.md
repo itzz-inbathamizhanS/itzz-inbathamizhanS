@@ -9,8 +9,8 @@ A 3rd-year CSE student venturing into Cybersecurity with a growing technisoul.
 
 <!--now-->
 
-[**BackStop**](https://github.com/itzz-inbathamizhanS/BackStop).  
-<sub>Last commit 19 Nov 2026 · Merge pull request \#2 from aasifahmed56-glitch/main</sub>
+[**INStudy**](https://github.com/itzz-inbathamizhanS/INStudy). [Live](https://instudy-desk.vercel.app)  
+<sub>Last commit 9 Nov 2026 · Add Study Desk app, study library and planning docs</sub>
 
 <!--/now-->
 
